@@ -7,13 +7,27 @@
 <title>LoginJSP</title>
 </head>
 <body>
-	<h1>First JSP</h1>
+	<h1 style="margin: auto;">Online Warranty Service</h1>
 
 	<form action="/login.do" method="POST">
-	<b style="color: red;">${ErrorMessage} </b><br>
-		Enter your name<input name="name" type="text"><br>
-		Enter your name<input name="password" type="password"/><br>
-		Submit <input type="submit">
+		<b style="color: red;">${ErrorMessage} </b><br>
+		<table>
+			<tr>
+				<td>Enter your name</td>
+				<td><input name="name" type="text"></td>
+
+
+			</tr>
+			<tr>
+				<td>Enter your Password</td>
+				<td><input name="password" type="password" /></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Login"></td>
+			</tr>
+		</table>
+
+
 	</form>
 </body>
 </html>
